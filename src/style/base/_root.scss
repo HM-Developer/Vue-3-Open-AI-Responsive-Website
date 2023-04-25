@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: #{$font-family};
+
+  --gradient-text: #{$gradient-text};
+  --gradient-bar: #{$gradient-bar};
+  --color-light: #{$color-light};
+  --color-bg: #{$color-bg};
+  --color-footer: #{$color-footer};
+  --color-blog: #{$color-blog};
+  --color-text: #{$color-text};
+  --color-subtext: #{$color-subtext};
+  --color-button: #{$colot-button};
+  --light-gradient: #{$light-gradient};
+  --input-background: #{$input-background};
+  --input-color: #{$input-color};
+}

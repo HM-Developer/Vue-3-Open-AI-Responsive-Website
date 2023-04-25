@@ -1,0 +1,10 @@
+.gradient_bg {
+  background: var(--color-bg);
+  background: radial-gradient(circle at 3% 25%, var(--light-gradient) 0%, var(--color-bg) 100%);
+}
+
+.gradient_text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

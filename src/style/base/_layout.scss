@@ -1,0 +1,36 @@
+.section__padding {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.section__margin {
+  padding: 4rem 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@include media-breakpoint-down(lg) {
+  .section__padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section__margin {
+    padding: 4rem;
+  }
+}
+
+// @include media-breakpoint-down(sm) {
+//   .section__padding {
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//   }
+
+//   .section__margin {
+//     padding: 4rem 2rem;
+//   }
+// }

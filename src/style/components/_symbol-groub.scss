@@ -1,0 +1,33 @@
+.symbol-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    margin-left: -10px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #13ded2;
+
+    &:hover {
+      z-index: 1;
+      //   translate: 0 -5px;
+      rotate: 10deg;
+    }
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+}

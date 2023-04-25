@@ -1,0 +1,24 @@
+$font-family: "Manrope", sans-serif;
+
+$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+$gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+$color-light: #ffffff;
+$color-bg: #040c18;
+$color-footer: #031b34;
+$color-blog: #042c54;
+$color-text: #81afdd;
+$color-subtext: #ff8a71;
+$colot-button: #ff4820;
+$light-gradient: #002853;
+$input-background: #052d56;
+$input-color: #3d6184;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
