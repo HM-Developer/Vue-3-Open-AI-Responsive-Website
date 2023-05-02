@@ -12,12 +12,11 @@
       font-size: 4rem;
       font-weight: 800;
       letter-spacing: -0.04rem;
+      margin-bottom: 1.5rem;
     }
 
-    .ai_header-desc {
-      color: var(--color-text);
+    .ai__description {
       font-size: 20px;
-      margin-top: 1.5rem;
     }
 
     .ai__header-input {
@@ -72,15 +71,12 @@
     align-items: flex-start;
     img {
       width: 100%;
+      animation: scale-in-out 2.5s linear infinite;
     }
   }
 
   .ai__header-content {
     @include media-breakpoint-down(xl) {
-      .ai_header-desc {
-        font-size: 1rem;
-      }
-
       .ai__header-input {
         button {
           font-size: 1rem;
@@ -91,6 +87,12 @@
     @include media-breakpoint-down(md) {
       .ai__header-title {
         font-size: 3rem;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 2rem 0;
+      .ai__header-title {
+        font-size: 2.5rem;
       }
     }
   }

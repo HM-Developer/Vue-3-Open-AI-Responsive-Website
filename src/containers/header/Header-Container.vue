@@ -4,7 +4,7 @@
       <Typed :options="titleOptions">
         <h1 class="typing gradient_text ai__header-title"></h1>
       </Typed>
-      <p class="ai_header-desc">
+      <p class="ai__description">
         Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise
         blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years
         to order allow asked of.
@@ -44,7 +44,7 @@ export default {
     const count = '1.6k+'
     const titleOptions = {
       strings: ['Let’s Build Something amazing with GPT-3 OpenAI'],
-      typeSpeed: 10,
+      typeSpeed: 30,
       showCursor: false
     }
 

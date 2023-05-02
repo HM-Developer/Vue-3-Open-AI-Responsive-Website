@@ -16,4 +16,9 @@
   border-radius: 5px;
   right: 10px;
   top: 10px;
+
+  &.buttom {
+    top: auto;
+    bottom: 10px;
+  }
 }

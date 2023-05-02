@@ -1,0 +1,41 @@
+#cta {
+  background: var(--gradient-text);
+  border-radius: 10px;
+  margin-top: 10rem;
+
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+  }
+  .ai__cta-get-started {
+    background: var(--color-bg);
+    color: #fff;
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    font-size: 19px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+    align-items: flex-start;
+    .ai__cta-get-started {
+      margin-top: 2rem;
+      align-self: center;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 2rem;
+    margin-top: 5rem;
+    p {
+      font-size: 12px;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

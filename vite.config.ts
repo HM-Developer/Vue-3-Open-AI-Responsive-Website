@@ -7,6 +7,10 @@ import autoprefixer from 'autoprefixer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 8080,
+    host: true
+  },
   plugins: [
     vue(),
     checker({
@@ -15,9 +19,7 @@ export default defineConfig({
   ],
   css: {
     postcss: {
-      plugins: [
-        autoprefixer({}) // add options if needed
-      ]
+      plugins: [autoprefixer()]
     }
   },
   resolve: {

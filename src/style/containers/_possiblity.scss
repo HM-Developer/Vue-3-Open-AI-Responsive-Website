@@ -1,0 +1,37 @@
+#possibility {
+  display: flex;
+  align-items: center;
+
+  .ai__possibility-img {
+    flex: 1;
+    margin-right: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ai__possibility-container {
+    flex: 1;
+    .gradient_text {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .ai__description {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    margin-top: 2rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+
+    .ai__possibility-img {
+      margin-bottom: 2rem;
+    }
+  }
+}

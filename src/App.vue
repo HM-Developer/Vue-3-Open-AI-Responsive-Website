@@ -1,18 +1,21 @@
 <template>
-  <div class="breakpoint">{{ breakpoint.current }}</div>
+  <div>
+    <div class="breakpoint">{{ breakpoint.current }}</div>
+    <div class="breakpoint buttom">{{ breakpoint.current }}</div>
 
-  <div class="gpt-app">
-    <div class="gradient_bg">
-      <Navbar />
-      <Headerx />
+    <div class="gpt-app">
+      <div class="gradient_bg">
+        <Navbar />
+        <Headerx />
+      </div>
+      <Brand />
+      <WhatGpt3 />
+      <Feature />
+      <Possibility />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
-    <Brand />
-    <WhatGpt3 />
-    <Feature />
-    <Possibility />
-    <Cta />
-    <Blog />
-    <Footer />
   </div>
 </template>
 

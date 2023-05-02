@@ -7,4 +7,78 @@
   background: var(--gradient-text);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.text-subtext {
+  color: var(--color-subtext);
+}
+
+.text-feature {
+  color: var(--color-light);
+  position: relative;
+  padding: 1.5rem 0;
+  &::before {
+    content: '';
+    width: 38px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient-text);
+  }
+}
+
+.link-color {
+  color: var(--link-color);
+}
+
+.ai__description {
+  color: var(--color-text);
+}
+
+%before {
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: scale 0.5s;
+    z-index: -1;
+    background-color: var(--color-button);
+  }
+}
+
+.btn-slide-in {
+  @extend %before;
+  &::before {
+    transform-origin: left;
+    scale: 0 100%;
+  }
+  &:hover:before {
+    scale: 100% 100%;
+  }
+}
+
+.btn-slide-out {
+  @extend %before;
+  &::before {
+    transform-origin: left;
+  }
+  &:hover:before {
+    scale: 0 100%;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .ai__description {
+    font-size: 1rem;
+  }
 }
